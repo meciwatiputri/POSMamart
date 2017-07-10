@@ -1,0 +1,65 @@
+<div class="col-lg-12">
+				<h1 class="page-header">Edit</h1>
+			</div>
+    <div class="row">
+        <div class="col-sm-12"><form class="form-horizontal" role="form">
+            <form role="form">
+                <div class="form-group">
+                    <label for="kodebarang" class="col-sm-2 control-label" id="kodebarang">Kode Barang :</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="nama" placeholder="Kode Barang">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="namabarang" class="col-sm-2 control-label" id="namabarang">Nama Barang :</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputkodesupplier" placeholder="Nama Barang">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Stock" class="col-sm-2 control-label" id="stock">stock :</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputAlamat" placeholder="stock">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="satuan" class="col-sm-2 control-label" id="satuan">Satuan :</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputTelp" placeholder="Satuan">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="hargabeli" class="col-sm-2 control-label" id="hargabeli ">Harga Beli :</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputKodeAdmin" placeholder="Harga Beli">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="hargajual" class="col-sm-2 control-label" id="hargajual">Harga Jual :</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputKodeAdmin" placeholder="Harga Jual">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="kategori" class="col-sm-2 control-label" id="kategori">Kategori :</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="kategori" placeholder="Kategori">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="col-sm-offset-1 btn btn-default">Simpan</button>
+                </div>
+            </form> 
+         </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#kodebarang').val('B001');
+            $('#namabarang').val('Aqua');
+            $('#stock').val('2');
+            $('#satuan').val('Dus');
+            $('#hargabeli').val('-');
+            $('#hargajual').val('-');
+            $('#kategori').val(2)
+    });
+    </script>
