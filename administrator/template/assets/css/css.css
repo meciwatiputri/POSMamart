@@ -1,0 +1,25 @@
+#isi {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+h3.panel-title {
+	text-align: center;
+	font-size: 9mm;
+}
+img.col-md-1 {
+	width: 300px;
+}
+ul>li {
+	margin-bottom: 0%;
+}
+.footer {
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+.tabel2 {
+	padding: 10pt;
+}
+body {
+	background-color: black;
+}
