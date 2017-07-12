@@ -11,6 +11,8 @@ class Admin extends Model
 	public $alamat;
 	public $no_telp:
 
+	
+
 }
 
  ?>
