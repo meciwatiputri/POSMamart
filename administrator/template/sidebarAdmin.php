@@ -7,7 +7,7 @@
                             <a href="../login.html"><i class="fa fa-sign-out"></i>Logout</a>
                     	</li>
                         <li>
-                            <a href="index2.html" id="beranda"><i class="fa fa-home fa-fw"></i> Beranda</a>
+                            <a href="berandAdmin.php" id="beranda"><i class="fa fa-home fa-fw"></i> Beranda</a>
                         </li>
                         <li>
                             <a href="lihat_user.php" id="datapengguna"><i class="fa fa-users fa-fw"></i> Data Pengguna</a>
