@@ -1,5 +1,4 @@
 <?php 
-
 include_once 'Model.php';
 class Admin extends Model
 {
@@ -10,13 +9,11 @@ class Admin extends Model
 	public $jenis_kelamin;
 	public $alamat;
 	public $no_telp:
-
 	public function getListAdmin()
 	{
 		$query = $this->db->prepare("SELECT * FROM Admin");
     		$query->execute();
     		$data = $query->fetchAll();
-
     		return $data;
 	}
 	public function setAdmin($kode_admin,$password,$nama,$nik,$jenis_kelamin,$alamat,$no_telp)
@@ -41,5 +38,4 @@ class Admin extends Model
 		  }
 	}
 }
-
  ?>

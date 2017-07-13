@@ -9,29 +9,42 @@
                     <div class="col-sm-8">
                     <table class="beranda" >
                         <tr>
-                            <td>Nama </td>
-                            <td>: Rastika Sadila Rahma</td>
+                            <td>Nama : </td>
+                            <?php foreach ($data_admin as $dta){?>
+                            <td><?= $dta['Nama']?></td>
+                            <?php } ?>
                         </tr>
                         <tr>
-                            <td>Nik </td>
-                            <td>: 1234567890112233</td>
+                            <td>Nik : </td>
+                            <?php foreach ($data_admin as $dta){?>
+                            <td><?= $dta['Nik']?></td>
+                            <?php } ?>
                         </tr>
                         <tr>
-                            <td>Kode Admin </td>
-                            <td>: A00001</td>
+                            <td>Kode Admin : </td>
+                            <?php foreach ($data_admin as $dta){?>
+                            <td><?= $dta['Id_Admin']?></td>
+                            <?php } ?>
                         </tr>
                         <tr>
-                            <td>Jenis Kelamin </td>
-                            <td>: Wanita</td>
+                            <td>Jenis Kelamin : </td>
+                            <?php foreach ($data_admin as $dta){?>
+                            <td><?= $dta['Jenis_kelamin']?></td>
+                            <?php } ?>
                         </tr>
                         <tr>
-                            <td>Alamat </td>
-                            <td>: Jl. Ujungpandang</td>
+                            <td>Alamat : </td>
+                            <?php foreach ($data_admin as $dta){?>
+                            <td><?= $dta['Alamat']?></td>
+                            <?php } ?>
                         </tr>
                         <tr>
-                            <td>No.telp </td>
-                            <td>: 089693985702</td>
+                            <td>No.telp : </td>
+                            <?php foreach ($data_admin as $dta){?>
+                            <td><?= $dta['No_telp']?></td>
+                            <?php } ?>
                         </tr>
+        <?php } ?>
                     </table>
                     </div>
                 </div>
