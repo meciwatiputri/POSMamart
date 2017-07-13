@@ -38,7 +38,7 @@
 		<tr>
 		    <td><?= $dtu['Nama']?></td>
 		    <td><?= $dtu['Id_Posisi']?></td>
-		    <td><a href="#" id="detail1">Detail </a>|<a href="#">Hapus</a></td>
+		    <td><a href="lengkap_user.php" id="detail1">Detail </a>|<a href="#">Hapus</a></td>
 		</tr>
 		<?php } ?>
 		    	</tbody>
