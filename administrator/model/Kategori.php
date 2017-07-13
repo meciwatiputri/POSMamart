@@ -8,7 +8,7 @@ class Kategori extends Model
 	
 	public function getDaftarKategori()
 	{
-		$query = $this->db->prepare("SELECT * FROM kategori");
+		$query = $this->db->prepare("SELECT * FROM Kategori");
     		$query->execute();
     		$data = $query->fetchAll();
 

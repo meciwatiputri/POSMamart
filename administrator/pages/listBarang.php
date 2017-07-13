@@ -32,55 +32,27 @@
 		    			<th>Stock</th>
 		    			<th>Satuan</th>
 		    			<th>Harga Beli</th>
-		    			<th>Harga Jual</th>
+		    			<th>Harga Jual/piece</th>
 		    			<th>Kode Kategori</th>
 		    			<th>Aksi</th>	
 		    		</tr>
 		    	</thead>
 		    	<tbody>
+		    	<?php foreach ($data_brg as $dtbrg){?>
 		    		<tr>
-		    			<td>B001</td>
-		    			<td>Aqua</td>
-		    			<td>2</td>
-		    			<td>Dus</td>
-		    			<td></td>
-		    			<td></td>
-		    			<td>2</td>
+		    			<td><?= $dtbrg['Id_Barang']?></td>
+		    			<td><?= $dtbrg['Nama_Barang']?></td>
+		    			<td><?= $dtbrg['Stock']?></td>
+		    			<td><?= $dtbrg['Satuan']?></td>
+		    			<td><?= $dtbrg['Harga_Beli']?></td>
+		    			<td><?= $dtbrg['Harga_Jual']?></td>
+		    			<td><?= $dtbrg['Id_kategori']?></td>
 		    			<td>
 		  			<a href="edit_barang.php" id="edit"> Edit </a>|
 		  			<a href="hapus_barang.php"> Hapus </a>
 		  		</td>
 		    		</tr>
-		    		<tr>
-		    			<td>B002</td>
-		    			<td>Indomilk Banana</td>
-		    			<td>2</td>
-		    			<td>Dus</td>
-		    			<td></td>
-		    			<td></td>
-		    			<td>2</td>
-		    			<td>
-		  			<a href="#"> Edit </a>|
-		  			<a href="#"> Hapus </a>
-		  		</td>
-		    		</tr>
+		    	<?php  }?>
 		    	</tbody>
 		    </table>
-	<script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/metisMenu.min.js"></script>
-    <script src="../assets/js/sb-admin-2.js"></script>
-   <script>
-        $(document).ready(function(){
-            $('#tambahbarang').click(function(){
-                $('#konten').load('tambah_barang.html');
-            });
-        });
-        </script>
-        <script>
-        $(document).ready(function(){
-            $('#edit').click(function(){
-                $('#konten').load('ubah_detail.html');
-            });
-        });
         </script>

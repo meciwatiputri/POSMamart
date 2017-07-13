@@ -9,25 +9,26 @@ class Barang extends Model
 	public $stock;
 	public $harga_beli;
 	public $harga_jual;
-}
+	public $satuan;
 	public function getListBarang()
 	{
 		$query = $this->db->prepare("SELECT * FROM Barang");
     		$query->execute();
-    		$data = $query->fetchAll();
+    		$data_brg = $query->fetchAll();
 
-    		return $data;
+    		return $data_brg;
 	}
 
 	public function setBarang($kode_barang,$nama_barang,$id_kategori,$stock,$harga_beli,$harga_jual)
 	{
 		try
 		  {
-		   $stmt = $this->db->prepare("INSERT INTO Barang(kode_barang,nama_barang,id_kategori,stock,harga_beli,harga_jual) VALUES(:Kode_Barang,:Nama_Barang,:Id_Kategori,:Stock,:Harga_Beli,:Harga_Jual)");
-		   $stmt->bindparam(":Kode_Barang",$kode_barang);
-		   $stmt->bindparam(":nama_barang",$nama_barang);
-		   $stmt->bindparam(":Id_Kategori",$id_kategori);
+		   $stmt = $this->db->prepare("INSERT INTO Barang(kode_barang,nama_barang,id_kategori,stock,harga_beli,harga_jual,satuan) VALUES(:Id_Barang,:Nama_Barang,:Id_kategori,:Stock,:Harga_Beli,:Harga_Jual,:Satuan)");
+		   $stmt->bindparam(":Id_Barang",$kode_barang);
+		   $stmt->bindparam(":Nama_Barang",$nama_barang);
+		   $stmt->bindparam(":Id_kategori",$id_kategori);
 		   $stmt->bindparam(":Stock",$stock);
+		   $stmt->bindparam(":Satuan",$satuan);	
 		   $stmt->bindparam(":Harga_Jual",$harga_jual);
 		   $stmt->bindparam(":Harga_Beli",$harga_beli);
 		   $stmt->execute();
@@ -39,5 +40,6 @@ class Barang extends Model
 		   return false;
 		  }
 	}
+}
 
  ?>

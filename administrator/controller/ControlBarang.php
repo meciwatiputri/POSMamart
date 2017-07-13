@@ -19,13 +19,14 @@ class ControlBarang extends Controller
 	{
 		include_once 'model/Barang.php';
 		$nbarang = new Barang();
-		$kode_barang = $_POST('Kode Barang');
-		$nama_barang = $_POST['Nama Barang'];
-		$id_kategori = $_POST['Kategori'];
-		$stock = $_POST['Stock'];
-		$harga_beli = $_POST['Harga Beli'];
-		$harga_jual= $_POST['Harga Jual'];
-		$pesan = $mbarang->setBarang($kode_barang,$nama_barang,$id_kategori,$stock,$harga_beli,$harga_jual);
+		$nama_barang = $_POST['namabarang'];
+		$id_kategori = $_POST['kategori'];
+		$stock = $_POST['stock'];
+		$satuan = $_POST['satuan'];
+		$harga_beli = $_POST['hargabeli'];
+		$harga_jual= $_POST['Harga_Jual'];
+		$pesan = $mbarang->setBarang($nama_barang,$id_kategori,$stock,$satuan,$harga_beli,$harga_jual);
 
 		return $pesan;
 	}
+}
